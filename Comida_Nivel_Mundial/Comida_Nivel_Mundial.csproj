@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FE88141-7FFE-4C73-BAA0-2228DD9EA7F2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Comida_Nivel_Mundial</RootNamespace>
+    <AssemblyName>Comida_Nivel_Mundial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Gmap.net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.Net.1.0.1\lib\Gmap.net.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIDC">
+      <HintPath>..\..\..\..\OneDrive\Documentos\Programacion\MyCanV_8_1\MyCanV_8_1\MyCanV_8_1\MyCan_V_8_1\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\UIDC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carro de compras CL\CCarritoCompras.cs" />
+    <Compile Include="CsConexion.cs" />
+    <Compile Include="csListarBusqueda.cs" />
+    <Compile Include="csListarDetalleOrden.cs" />
+    <Compile Include="csListarOrdnes.cs" />
+    <Compile Include="csOrdenes.cs" />
+    <Compile Include="Entregas CL\CEnvios.cs" />
+    <Compile Include="Entregas CL\CHistorial_Envio.cs" />
+    <Compile Include="Entregas CL\csVerOrdenesEnviar.cs" />
+    <Compile Include="frmBusquedaComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaComida.Designer.cs">
+      <DependentUpon>frmBusquedaComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarrito.Designer.cs">
+      <DependentUpon>frmCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCocinado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCocinado.Designer.cs">
+      <DependentUpon>frmCocinado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearComida.Designer.cs">
+      <DependentUpon>frmCrearComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome_Cliente.Designer.cs">
+      <DependentUpon>frmHome_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioAdministrador.Designer.cs">
+      <DependentUpon>frmInicioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioCliente.Designer.cs">
+      <DependentUpon>frmInicioCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioRepartidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioRepartidor.Designer.cs">
+      <DependentUpon>frmInicioRepartidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapaCliente.Designer.cs">
+      <DependentUpon>frmMapaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapaRepartidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapaRepartidor.Designer.cs">
+      <DependentUpon>frmMapaRepartidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenes.Designer.cs">
+      <DependentUpon>frmOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenesEnvios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenesEnvios.Designer.cs">
+      <DependentUpon>frmOrdenesEnvios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPago.Designer.cs">
+      <DependentUpon>frmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecibePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecibePedido.Designer.cs">
+      <DependentUpon>frmRecibePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox_Si_NO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox_Si_NO.Designer.cs">
+      <DependentUpon>MessageBox_Si_NO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageRepartidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageRepartidor.Designer.cs">
+      <DependentUpon>MessageRepartidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos CL\CCategorias.cs" />
+    <Compile Include="Productos CL\CCombosComidas.cs" />
+    <Compile Include="Productos CL\CComida.cs" />
+    <Compile Include="Productos CL\CDetalleCombo.cs" />
+    <Compile Include="Productos CL\csListar_Ingredientes.cs" />
+    <Compile Include="Productos CL\CVariantesComida.cs" />
+    <Compile Include="Productos CL\Listar_Carrito.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recomendar Comida CL\CCategorias_Preferencia.cs" />
+    <Compile Include="Recomendar Comida CL\CPaisesPreferencias.cs" />
+    <Compile Include="Recomendar Comida CL\CPreferencias_Comida.cs" />
+    <Compile Include="Recomendar Comida CL\CRecomendacionesPlatos.cs" />
+    <Compile Include="Sugerencias CL\CDetalle_sugerencia.cs" />
+    <Compile Include="Sugerencias CL\CSugerirComida.cs" />
+    <Compile Include="Usuarios Aplicacion\CCliente.cs" />
+    <Compile Include="Usuarios Aplicacion\CEmpleados.cs" />
+    <Compile Include="Usuarios Aplicacion\CUsuario.cs" />
+    <Compile Include="Ventas Cl\CDesembolso.cs" />
+    <Compile Include="Ventas Cl\CFactura.cs" />
+    <Compile Include="Ventas Cl\CMetodosPagos.cs" />
+    <Compile Include="Ver_DetalleOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_DetalleOrden.Designer.cs">
+      <DependentUpon>Ver_DetalleOrden.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBusquedaComida.resx">
+      <DependentUpon>frmBusquedaComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarrito.resx">
+      <DependentUpon>frmCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCocinado.resx">
+      <DependentUpon>frmCocinado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearComida.resx">
+      <DependentUpon>frmCrearComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome_Cliente.resx">
+      <DependentUpon>frmHome_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioAdministrador.resx">
+      <DependentUpon>frmInicioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioCliente.resx">
+      <DependentUpon>frmInicioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioRepartidor.resx">
+      <DependentUpon>frmInicioRepartidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapaCliente.resx">
+      <DependentUpon>frmMapaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapaRepartidor.resx">
+      <DependentUpon>frmMapaRepartidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenes.resx">
+      <DependentUpon>frmOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenesEnvios.resx">
+      <DependentUpon>frmOrdenesEnvios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPago.resx">
+      <DependentUpon>frmPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecibePedido.resx">
+      <DependentUpon>frmRecibePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox_Si_NO.resx">
+      <DependentUpon>MessageBox_Si_NO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageRepartidor.resx">
+      <DependentUpon>MessageRepartidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ver_DetalleOrden.resx">
+      <DependentUpon>Ver_DetalleOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes CL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20230103_014755.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estrella_amarilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recetas-de-pechuga-de-pollo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_5167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844477-disable-eye-inactive-see-show-view-watch_110343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844476-eye-see-show-view-watch_110339.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844476-eye-see-show-view-watch_1103391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844477-disable-eye-inactive-see-show-view-watch_1103431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannercomidas-rapidas-1-1024x801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bsearcher_magnifyng_glass_search_locate_find_icon_123813.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searcher_magnifyng_glass_search_locate_find_icon_123813.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacomidas-rapidas-1-1024x801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bsearcher_magnifyng_glass_search_locate_find_icon_1238131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3643769-building-home-house-main-menu-start_113416.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3643769-building-home-house-main-menu-start_1134161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bshoppingcart_80945.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_1140331.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searcher_magnifyng_glass_search_locate_find_icon_1238131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsearcher_magnifyng_glass_search_locate_find_icon_123813.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_icon_128295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enext_icon_128295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renext_icon_128295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abusiness_cash_coin_dollar_finance_money_payment_icon_123244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ejemplo_cobro_tarjeta4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgui_shipping_icon_157590.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooked_food_meal_cooking_cuisine_dinner_healthy_meat_icon_140888.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
